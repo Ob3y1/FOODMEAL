@@ -1,0 +1,129 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background:rgba(0, 0, 0, 0.426)url(img/pexels-min-an-920570.jpg);
+    background-blend-mode: darken;
+    color: white;
+    height: 100vh;
+    background-size:100%;
+    background-image: cover;
+    background-repeat:no-repeat;
+  }
+  *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background:transparent;
+    position: sticky;
+}
+.logo{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: darkorange;
+}
+.logo span{
+    color:white;
+}
+header ul{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a{
+    padding: 3px 15px 6px 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+header ul li a:hover{
+    background: darkorange;
+}
+.contact-in{
+    width: 80%;
+    height:auto;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+    border-radius: 10px;
+    background: darkorange;
+    box-shadow: 0px 0px 10px 0px #666;
+}
+.contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+.contact-map iframe{
+    width: 100%;
+    height:100%;
+}
+.contact-form{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 30px;
+    text-align: center;
+}
+.contact-form h1{
+ margin-bottom: 10px;
+}
+.contact-form-txt{
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.contact-form-txt::placeholder{
+    color:rgb(58, 58, 58);
+}
+.contact-form-textarea{
+    width: 100%;
+    height: 130px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.contact-form-textarea::placeholder{
+    color:rgb(58, 58, 58);
+}
+.contact-form-btn{
+width: 100%;
+border: none;
+outline: none;
+border-radius: 50px;
+background: #000000;
+color: #fff;
+text-transform: uppercase;
+padding: 10px 0;
+cursor: pointer;
+font-size: 18px;
+}
+
+
+
+
+

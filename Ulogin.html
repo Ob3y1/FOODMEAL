@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <script src="js/Ulogin.js"></script>
+    <title>login</title>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back_video" src="video/video.mp4" ></video>
+    <center>
+        <div id="lall">
+            <div id="allimg-">
+                <center> <img src="img/icons8-source-code-50.png"> </center>
+            </div>
+            <div id="lall-">
+                <p><b>WELCOME</b></p>
+                <form action="Ulogin.php" method="post">
+                    <label>user name </label><br>
+                    <input type="text" placeholder="user name" name="username" required><br>
+                    <label>password </label><br>
+                    <input type="password" placeholder="password" name="password" required id="input1"><span id="all-span" onclick="myfunction()"><img id="hide1"
+                        src="img/icons8-eye-64.png" height="18px" width="18px"><img id="hide2" src="img/icons8-private-lock-60.png" height="18px" width="18px"></span><br>
+                    <button type="submit" name="login"><b>Submit</b></button>
+                </form>
+            </div>  
+            <a href="Ucreate.html">
+                <p>create an account ?</p>
+            </a>
+        </div>
+    </center>
+</body>
+</html>

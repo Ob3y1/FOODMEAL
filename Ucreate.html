@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <script src="js/Ucreate.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <title>create an account</title>
+</head>
+
+<body>
+    <video autoplay loop muted plays-inline class="back_video" src="video/video.mp4">
+    </video>
+    <center>
+        <div id="all">
+            <div id="allimg">
+                <center> <img src="img/icons8-source-code-50.png"> </center>
+            </div>
+            <div id="all-">
+                <p><b>Create an account</b></p>
+                <form action="Ucreate.php" method="post" name="login">
+                    <label id="l1">Name</label><label id="l2">Password</label><br>
+                    <input type="text" name="User_name" placeholder="User name" required>
+                    <input id="input1" type="password" name="password" placeholder="password" pattern="[A-Za-z\d\.]{4,12}" title="must be btween 4 and 12 characters and contain only letters , numbers and periods" required >
+                    <span id="allspan" onclick="myfunction()">
+                        <img id="hide1" src="img/icons8-eye-64.png" height="18px" width="18px">
+                        <img id="hide2" src="img/icons8-private-lock-60.png" height="18px" width="18px">
+                    </span><br>
+                        <label id="l1">Email</label><label id="l3">Confirm Password</label><br>
+                        <input type="email" name="email" placeholder="email" required>
+                        <input id="input2" type="password" name="confirmpassword" placeholder="confirm password" pattern="[A-Za-z\d\.]{4,12}" title="must match the password" required>
+                    <span id="allspan" onclick="myfunction1()">
+                        <img id="hide3" src="img/icons8-eye-64.png" height="17px" width="17px">  
+                        <img id="hide4" src="img/icons8-private-lock-60.png" height="17px" width="17px">
+                    </span><br>
+                        <label id="l4">Birth Date</label><br>
+                        <input type="datetime-local" id="d1" name="b_date" placeholder="b_date" required><br>
+                    <button type="submit" name="create">Create</button>
+                </form>
+            </div>
+        </div>
+    </center>
+</body>
+<script>
+    flatpickr("input[type=datetime-local]",{});
+</script>
+</html>
+
